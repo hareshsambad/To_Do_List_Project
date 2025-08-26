@@ -383,6 +383,60 @@ body {
   }
 }
 
+/* Small phones (Galaxy S, iPhone SE width) */
+@media (max-width: 360px) {
+  .main_container {
+    width: calc(100% - 16px);
+    margin: 16px auto;
+    padding: 12px;
+  }
+
+  .filter_row {
+    gap: 10px;
+  }
+
+  .filter-btn {
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 14px;
+  }
+
+  .input_box input {
+    padding: 10px 10px 10px 30px;
+    font-size: 13px;
+  }
+
+  .input_box button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .task-label p {
+    font-size: 13px;
+  }
+
+  .icon-btn {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Ultra small (<=320px) */
+@media (max-width: 320px) {
+  .filter_row {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .task_box li {
+    padding: 6px;
+  }
+}
+
 /* 
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
