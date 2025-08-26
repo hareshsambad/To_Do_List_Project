@@ -297,6 +297,92 @@ body {
   background: #b91c1c;  
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+  .main_container {
+    max-width: 640px;
+    width: calc(100% - 40px);
+    margin: 40px auto;
+    padding: 16px;
+  }
+
+  .input_box input {
+    font-size: 15px;
+  }
+
+  .filter-btn {
+    padding: 6px 12px;
+  }
+
+  .task_content {
+    max-height: 45vh;
+  }
+
+  .icon-btn {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    overflow: auto;
+  }
+
+  .main_container {
+    width: calc(100% - 24px);
+    margin: 24px auto;
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .input_box {
+    gap: 8px;
+  }
+
+  .input_box i {
+    left: 8px;
+  }
+
+  .input_box input {
+    padding: 12px 12px 12px 34px;
+    font-size: 14px;
+  }
+
+  .input_box button {
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  .task_box li {
+    padding: 8px;
+  }
+
+  .task-label p {
+    font-size: 14px;
+  }
+
+  .task_content {
+    max-height: 50vh;
+  }
+
+  .button_container button {
+    padding: 9px 14px;
+    border-radius: 8px;
+  }
+
+  .category-actions {
+    gap: 8px;
+  }
+
+  .category-btn,
+  .category-cancel {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
 /* 
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
