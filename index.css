@@ -338,6 +338,7 @@ body {
 
   .input_box {
     gap: 8px;
+    flex-wrap: wrap;
   }
 
   .input_box i {
@@ -347,12 +348,16 @@ body {
   .input_box input {
     padding: 12px 12px 12px 34px;
     font-size: 14px;
+    flex: 1 1 100%;
+    width: 100%;
   }
 
   .input_box button {
     padding: 10px 14px;
     font-size: 14px;
     border-radius: 8px;
+    flex: 1 1 100%;
+    width: 100%;
   }
 
   .task_box li {
