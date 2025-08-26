@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart To-Do</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="filter_row">
+        <span class="filter-btn active" id="all">All</span>
+        <span class="filter-btn" id="pending">Pending</span>
+        <span class="filter-btn" id="completed">Completed</span>
+      </div>
+
+      <div class="input_box">
+        <i class="uil uil-bars icon"></i>
+        <input
+          id="input_data"
+          type="text"
+          placeholder="Add A New Task!"
+        />
+        <button id="add_task_btn" class="add_task">Add</button>
+      </div>
+
+      <div class="filter_row secondary">
+        <span class="filter-btn" id="today">Today</span>
+        <span class="filter-btn" id="weekly">Weekly</span>
+        <span class="filter-btn" id="monthly">Monthly</span>
+      </div>
+
+      <div class="task_content">
+        <ul class="task_box">
+          <!-- <li>
+            <div class="task-label">
+              <input type="checkbox" />
+              <p>Create To-Do List</p>
+            </div>
+            <div class="setting">
+              <i class="uil uil-ellipsis-h menu-toggle"></i>
+              <div class="dropdown-menu">
+                <span>Edit</span>
+                <span>Delete</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="task-label">
+              <input type="checkbox" />
+              <p>Create To-Do List</p>
+            </div>
+            <div class="setting">
+              <i class="uil uil-ellipsis-h menu-toggle"></i>
+              <div class="dropdown-menu">
+                <span>Edit</span>
+                <span>Delete</span>
+              </div>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+
+      <div class="button_container">
+        <button id="clear_all_btn">Clear All</button>
+      </div>
+    </div>
+    <div class="modal" id="customPrompt">
+      <div class="modal-box">
+        <p id="promptText">Input is empty!</p>
+        <button id="promptOkBtn">OK</button>
+      </div>
+    </div>
+    <div class="modal" id="categoryModal">
+      <div class="modal-box">
+        <p>Select category for this task</p>
+        <div class="category-actions">
+          <button id="catToday" class="category-btn">Today</button>
+          <button id="catWeekly" class="category-btn">Weekly</button>
+          <button id="catMonthly" class="category-btn">Monthly</button>
+        </div>
+        <button id="catCancel" class="category-cancel">Cancel</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="input_box">
+        <i class="uil uil-bars icon"></i>
+        <input type="text" placeholder="Add A New Task !" />
+        <button class="add_task">Add</button>
+      </div>
+      <div class="button_container">
+        <button>Clear All</button>
+      </div>
+      <div class="work_wise_filters">
+        <span class="active" id="all">All Task</span>
+        <span id="pending">Pending Task</span>
+        <span id="completed">Completed Task</span>
+      </div>
+      <div class="day_wise_filters">
+        <span class="today" id="all">Today Task</span>
+        <span id="weekly">Weekly Task</span>
+        <span id="monthly">Monthly Task</span>
+      </div>
+      <div class="task_content">
+        <div class="button_container">
+          <button>Clear All</button>
+        </div>
+        <div class="all_task_box">
+          <ul class="task_box">
+            <li for="task">
+              <label for="1">
+                <input type="checkbox" id="1" />
+                <p>Create To Dooooooooooooooooooooooooooooooooooooooo List</p>
+              </label>
+
+              <div class="setting">
+                <i class="uil uil-ellipsis-h"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="all_task_box">
+          <ul class="task_box">
+            <li for="task">
+              <label for="1">
+                <input class="checkbox_input" type="checkbox" id="1" />
+                <p>Create To Do List</p>
+              </label>
+
+              <div class="setting">
+                <i class="uil uil-ellipsis-h"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="all_task_box">
+          <ul class="task_box">
+            <li for="task">
+              <label for="1">
+                <input class="checkbox_input" type="checkbox" id="1" />
+                <p>Create To Do List</p>
+              </label>
+              <div class="setting">
+                <i class="uil uil-ellipsis-h"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="all_task_box">
+          <ul class="task_box">
+            <li for="task">
+              <label for="1">
+                <input class="checkbox_input" type="checkbox" id="1" />
+                <p>Create To Do List</p>
+              </label>
+
+              <div class="setting">
+                <i class="uil uil-ellipsis-h"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="all_task_box">
+          <ul class="task_box">
+            <li for="task">
+              <label for="1">
+                <input class="checkbox_input" type="checkbox" id="1" />
+                <p>Create To Do List</p>
+              </label>
+
+              <div class="setting">
+                <i class="uil uil-ellipsis-h"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script></script>
+</html> -->
